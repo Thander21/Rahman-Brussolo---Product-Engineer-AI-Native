@@ -371,15 +371,26 @@
         }
 
         @media print {
+            @page {
+                margin: 15mm !important;
+                size: A4;
+            }
+
             body {
                 padding: 0;
-                background: white;
+                background: white !important;
+                margin: 0;
             }
 
             .cv-page {
                 border-radius: 0;
                 box-shadow: none;
                 max-width: 100%;
+                margin: 0;
+                width: 100%;
+                border: none;
+                overflow: visible !important;
+                height: auto !important;
             }
 
             .hero-banner {
@@ -422,23 +433,8 @@
                 content: "" !important;
             }
 
-            .print-btn {
+            .control-bar, .whatsapp-float {
                 display: none !important;
-            }
-
-            @page {
-                margin: 15mm;
-                size: A4;
-            }
-
-            body {
-                background: white;
-            }
-
-            .cv-page {
-                box-shadow: none;
-                margin: 0;
-                width: 100%;
             }
         }
         /* Control Bar for Print */
@@ -528,6 +524,7 @@
                 display: none !important;
             }
         }
+    </style>
 </head>
 
 <body>
