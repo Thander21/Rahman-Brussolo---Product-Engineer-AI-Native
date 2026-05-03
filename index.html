@@ -4,7 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahman Brussolo | Solutions Architect & AI-Native Engineer</title>
+    <title>Rahman Brussolo | Product Engineer AI-Native | Solutions Architect</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rahman Brussolo: Product Engineer AI-Native & Solutions Architect com 25 anos de experiência. Especialista em OutSystems, Orquestração de Agentes de IA e DevOps.">
+    <meta name="keywords" content="Rahman Brussolo, Product Engineer, AI-Native, OutSystems Expert, Solutions Architect, DevOps, SRE, Portugal, Tech Leadership">
+    <meta name="author" content="Rahman Brussolo">
+    <link rel="canonical" href="https://thander21.github.io/Rahman-Brussolo---Product-Engineer-AI-Native/">
+
+    <!-- OpenGraph (LinkedIn, WhatsApp, Facebook) -->
+    <meta property="og:title" content="Rahman Brussolo | Product Engineer AI-Native">
+    <meta property="og:description" content="25 anos de engenharia e estratégia técnica. Especialista OutSystems e Orquestração de IA.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Thander21/Rahman-Brussolo---Product-Engineer-AI-Native/main/Banner.jpg">
+    <meta property="og:url" content="https://thander21.github.io/Rahman-Brussolo---Product-Engineer-AI-Native/">
+    <meta property="og:type" content="website">
+
+    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rahman Brussolo",
+      "jobTitle": "Product Engineer AI-Native & Solutions Architect",
+      "url": "https://thander21.github.io/Rahman-Brussolo---Product-Engineer-AI-Native/",
+      "sameAs": [
+        "https://linkedin.com/in/rahman-brussolo",
+        "https://github.com/Thander21"
+      ],
+      "knowsAbout": ["OutSystems", "Artificial Intelligence", "DevOps", "Software Architecture", "SRE"]
+    }
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
@@ -155,16 +185,18 @@
             margin-bottom: 40px;
         }
 
-        .section-title {
+        h2.section-title {
             font-size: 0.8rem;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1.8px;
             color: var(--text-muted);
             margin-bottom: 20px;
+            margin-top: 0;
             display: flex;
             align-items: center;
             gap: 10px;
+            border: none;
         }
 
         .section-title::after {
@@ -375,15 +407,68 @@
                 margin-bottom: 30px;
             }
 
+            .sidebar a, .main-col a {
+                color: var(--primary);
+                text-decoration: none;
+            }
+
+            .sidebar a::after, .main-col a::after {
+                content: " (" attr(href) ")";
+                font-size: 0.7rem;
+                opacity: 0.7;
+            }
+
+            .web-link a::after, .btn-link::after {
+                content: "" !important;
+            }
+
+            .print-btn {
+                display: none !important;
+            }
+
             @page {
-                margin: 0;
+                margin: 15mm;
                 size: A4;
             }
+
+            body {
+                background: white;
+            }
+
+            .cv-page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+            }
         }
+    <style>
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s;
+        }
+        .print-btn:hover { transform: scale(1.05); }
     </style>
 </head>
 
 <body>
+
+    <button class="print-btn" onclick="window.print()" aria-label="Imprimir Currículo">
+        <span>🖨️</span> Imprimir PDF
+    </button>
 
     <div class="cv-page">
 
@@ -410,15 +495,15 @@
 
             <aside class="sidebar">
 
-                <div class="section-title">Contatos</div>
+                <h2 class="section-title">Contatos</h2>
                 <ul class="info-list">
                     <li>📍 Barreiro, Portugal</li>
-                    <li>📞 +351 966 006 569</li>
-                    <li>✉️ rahman13@gmail.com</li>
+                    <li>📞 <a href="tel:+351966006569" style="color: inherit; text-decoration: none;">+351 966 006 569</a></li>
+                    <li>✉️ <a href="mailto:rahman13@gmail.com" style="color: inherit; text-decoration: none;">rahman13@gmail.com</a></li>
                     <li>🌍 GMT+0 (Portugal)</li>
                 </ul>
 
-                <div class="section-title">Links</div>
+                <h2 class="section-title">Links</h2>
                 <a href="https://linkedin.com/in/rahman-brussolo" class="btn-link">LinkedIn</a>
                 <a href="https://github.com/Thander21" class="btn-link">GitHub</a>
                 <a href="https://www.outsystems.com/profile/lxzupejyhh/overview" class="btn-link">OutSystems
@@ -474,7 +559,7 @@
                     </div>
                 </div>
 
-                <div class="section-title">Idiomas</div>
+                <h2 class="section-title">Idiomas</h2>
                 <div class="edu-grid">
                     <div class="edu-card"><b>Português</b><span>Nativo</span></div>
                     <div class="edu-card"><b>Inglês</b><span>Intermediário (Profissional)</span></div>
@@ -485,7 +570,7 @@
             <main class="main-col">
 
                 <section>
-                    <div class="section-title">Resumo Profissional</div>
+                    <h2 class="section-title">Resumo Profissional</h2>
                     <p style="text-align: justify; font-size: 0.95rem; color: #334155; margin-top: 0;">
                         Expert em <b>OutSystems (Certificado ODC/O11)</b> ancorado por <b>25 anos de estrada técnica e
                             estratégica</b>. Como ex-CEO, trago uma visão pragmática focada em ROI e resiliência — não
@@ -496,7 +581,7 @@
                 </section>
 
                 <section>
-                    <div class="section-title">Experiência Profissional</div>
+                    <h2 class="section-title">Experiência Profissional</h2>
                     <div class="exp-timeline">
 
                         <div class="exp-entry">
@@ -633,7 +718,7 @@
                 </section>
 
                 <section style="margin-top: 40px;">
-                    <div class="section-title">Formação e Certificações</div>
+                    <h2 class="section-title">Formação e Certificações</h2>
                     <div class="edu-grid" style="grid-template-columns: 1fr 1fr;">
                         <div class="edu-card"><b>Bacharelado Eng. Software</b><span>Unigra EAD (Foco em
                                 Arquitetura)</span></div>
@@ -644,7 +729,7 @@
                 </section>
 
                 <section style="margin-top: 40px;">
-                    <div class="section-title">Fundação Técnica (Hardcore Tech)</div>
+                    <h2 class="section-title">Fundação Técnica (Hardcore Tech)</h2>
                     <div class="edu-grid" style="grid-template-columns: 1fr 1fr;">
                         <div class="edu-card"><b>Solução Sistemas (2010 — 2012)</b><span>Coordenação técnica e
                                 engenharia de implantação de ERPs.</span></div>
