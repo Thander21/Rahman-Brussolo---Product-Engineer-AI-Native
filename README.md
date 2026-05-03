@@ -1,4 +1,4 @@
-# Rahman Brussolo | Product Engineer AI-Native & Solutions Architect
+# Rahman Brussolo | Solutions Architect | Product Engineer AI-Native | OutSystems Expert 11/ODC
 
 ![Engineering Banner](https://raw.githubusercontent.com/Thander21/Rahman-Brussolo---Product-Engineer-AI-Native/main/Banner.jpg)
 
@@ -6,11 +6,14 @@
 
 ---
 
-## 🌐 Presença Online
+## 🌐 Presença & Contato
+*   **📍 Localização:** Barreiro, Portugal (GMT+0)
+*   **📞 Telefone:** [+351 966 006 569](tel:+351966006569)
+*   **✉️ E-mail:** [rahman13@gmail.com](mailto:rahman13@gmail.com)
 *   **Currículo Interativo:** [thander21.github.io/Rahman-Brussolo---Product-Engineer-AI-Native/](https://thander21.github.io/Rahman-Brussolo---Product-Engineer-AI-Native/)
 *   **LinkedIn:** [linkedin.com/in/rahman-brussolo](https://linkedin.com/in/rahman-brussolo)
-*   **Portfolio:** [rahman.portfolio.sampati.com.br](https://rahman.portfolio.sampati.com.br)
-*   **OutSystems Profile:** [Community Profile](https://www.outsystems.com/profile/lxzupejyhh/overview)
+*   **GitHub:** [github.com/Thander21](https://github.com/Thander21)
+*   **OutSystems:** [Community Profile](https://www.outsystems.com/profile/lxzupejyhh/overview)
 
 ---
 
