@@ -1,6 +1,6 @@
 # Rahman Brussolo | Product Engineer AI-Native & Solutions Architect
 
-![Engineering Banner](https://raw.githubusercontent.com/Thander21/Rahman-Brussolo---Product-Engineer-AI-Native/main/docs/Banner.jpg)
+![Engineering Banner](https://raw.githubusercontent.com/Thander21/Rahman-Brussolo---Product-Engineer-AI-Native/main/Banner.jpg)
 
 > **"Estrategista tecnológico com 25 anos de estrada técnica e executiva. Desenho soluções que sustentam negócios, orquestrando o futuro com IA-Native e DevOps."**
 
