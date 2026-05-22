@@ -7,7 +7,7 @@
 ---
 
 ## 🌐 Presença & Contato
-*   **📍 Localização:** Barreiro, Portugal (GMT+0)
+*   **📍 Localização:** Oeiras, Portugal (GMT+0)
 *   **📞 Telefone:** [+351 966 006 569](tel:+351966006569)
 *   **✉️ E-mail:** [rahman13@gmail.com](mailto:rahman13@gmail.com)
 *   **Currículo Interativo:** [thander21.github.io/Rahman-Brussolo---Product-Engineer-AI-Native/](https://thander21.github.io/Rahman-Brussolo---Product-Engineer-AI-Native/)
