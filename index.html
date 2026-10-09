@@ -375,8 +375,9 @@
         }
 
         @media print {
+            /* Página 1: cabeçalho + sidebar | resumo. Da experiência em diante: 1 coluna. */
             @page {
-                margin: 15mm !important;
+                margin: 10mm;
                 size: A4;
             }
 
@@ -384,6 +385,8 @@
                 padding: 0;
                 background: white !important;
                 margin: 0;
+                font-size: 13px;
+                line-height: 1.45;
             }
 
             .cv-page {
@@ -398,46 +401,191 @@
             }
 
             .hero-banner {
-                height: 160px;
+                height: 95px;
+                border-radius: 10px;
+                overflow: hidden;
             }
 
             .header-card {
-                top: 90px;
+                position: relative;
+                top: auto;
+                left: auto;
+                right: auto;
+                z-index: 10;
+                margin: -45px 20px 0;
                 background: white !important;
                 backdrop-filter: none;
+                -webkit-backdrop-filter: none;
                 border: 1px solid #ddd;
-                padding: 15px 25px;
+                border-radius: 14px;
+                box-shadow: none;
+                padding: 12px 20px;
+                gap: 20px;
+            }
+
+            .profile-photo {
+                width: 92px;
+                height: 92px;
+                border-width: 3px;
+                transform: none;
+            }
+
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            .tagline {
+                font-size: 0.85rem;
+                margin-top: 6px;
+                line-height: 1.35;
+            }
+
+            .web-link {
+                font-size: 0.68rem;
+                margin-top: 5px;
+            }
+
+            .content-layout {
+                display: block;
+                margin-top: 0;
             }
 
             .sidebar {
+                float: left;
+                width: 225px;
                 background: #fff !important;
-                width: 280px;
+                padding: 16px 16px 0 0;
+                margin-right: 22px;
+            }
+
+            .sidebar h2.section-title,
+            .sidebar .section-title {
+                margin: 0 0 8px !important;
+                font-size: 0.66rem;
+                letter-spacing: 1.4px;
+            }
+
+            .info-list {
+                margin-bottom: 14px;
+            }
+
+            .info-list li {
+                margin-bottom: 4px;
+                font-size: 0.74rem;
+            }
+
+            .btn-link {
+                display: inline-block;
+                padding: 3px 8px;
+                margin: 0 3px 5px 0;
+                font-size: 0.66rem;
+                border-radius: 6px;
+            }
+
+            .sidebar .btn-link:last-of-type {
+                margin-bottom: 14px;
+            }
+
+            .skill-box {
+                margin-bottom: 8px;
+            }
+
+            .skill-box h4 {
+                font-size: 0.6rem;
+                margin: 0 0 4px;
+            }
+
+            .pills-container {
+                gap: 3px;
+            }
+
+            .skill-pill {
+                padding: 1px 6px;
+                font-size: 0.6rem;
+                border-radius: 4px;
+            }
+
+            .edu-card {
+                padding: 6px 10px;
+                border-radius: 8px;
+            }
+
+            .edu-card b {
+                font-size: 0.74rem;
+            }
+
+            .edu-card span {
+                font-size: 0.66rem;
             }
 
             .main-col {
-                padding: 40px 30px;
+                padding: 16px 0 0;
             }
 
-            section {
-                margin-bottom: 30px;
+            /* Resumo ao lado da sidebar */
+            .main-col > section:first-child {
+                display: flow-root;
+                margin-bottom: 0;
+            }
+
+            .main-col > section:first-child p {
+                font-size: 0.8rem;
+                line-height: 1.5;
+            }
+
+            /* Experiência em diante: página nova, largura total */
+            .main-col > section:not(:first-child) {
+                clear: both;
+                margin-bottom: 14px;
+                margin-top: 0 !important;
+            }
+
+            .main-col > section:nth-child(2) {
+                break-before: page;
+                page-break-before: always;
+                padding-top: 4px;
+            }
+
+            .main-col h2.section-title {
+                margin-bottom: 12px;
+            }
+
+            .exp-entry {
+                margin-bottom: 12px;
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .comp-name {
+                font-size: 1rem;
+            }
+
+            .role-name {
+                font-size: 0.82rem;
+                margin-bottom: 4px;
+            }
+
+            .exp-list li {
+                font-size: 0.8rem;
+                margin-bottom: 2px;
+            }
+
+            .main-col .edu-card {
+                padding: 5px 10px;
+            }
+
+            .cv-footer {
+                padding: 8px;
+                font-size: 0.62rem;
+                line-height: 1.3;
+                background: #fff;
+                break-inside: avoid;
             }
 
             .sidebar a,
             .main-col a {
                 color: var(--primary);
                 text-decoration: none;
-            }
-
-            .sidebar a::after,
-            .main-col a::after {
-                content: " (" attr(href) ")";
-                font-size: 0.7rem;
-                opacity: 0.7;
-            }
-
-            .web-link a::after,
-            .btn-link::after {
-                content: "" !important;
             }
 
             .control-bar,
