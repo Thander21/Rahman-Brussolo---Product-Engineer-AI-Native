@@ -1,4 +1,4 @@
-# Rahman Brussolo | Solutions Architect | Product Engineer AI-Native | OutSystems Expert 11/ODC
+# Rahman Brussolo | AI-Native Product Engineer • SDD + TDD + GenAI Orchestration | Agentic Systems | OutSystems Developer 11/ODC | Analista Funcional
 
 ![Engineering Banner](https://raw.githubusercontent.com/Thander21/Rahman-Brussolo---Product-Engineer-AI-Native/main/Banner.jpg)
 
