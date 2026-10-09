@@ -270,6 +270,32 @@
             border: 1px solid var(--border);
         }
 
+        .summary p {
+            text-align: justify;
+            font-size: 0.95rem;
+            color: #334155;
+            margin: 0 0 12px;
+        }
+
+        .summary h3 {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 18px 0 8px;
+        }
+
+        .summary ul {
+            padding-left: 18px;
+            margin: 0 0 12px;
+        }
+
+        .summary li {
+            font-size: 0.9rem;
+            color: #334155;
+            margin-bottom: 6px;
+            text-align: justify;
+        }
+
         .exp-timeline {
             border-left: 2px solid var(--border);
             padding-left: 25px;
@@ -377,7 +403,7 @@
         @media print {
             /* Página 1: cabeçalho + sidebar | resumo. Da experiência em diante: 1 coluna. */
             @page {
-                margin: 10mm;
+                margin: 15mm;
                 size: A4;
             }
 
@@ -401,9 +427,7 @@
             }
 
             .hero-banner {
-                height: 95px;
-                border-radius: 10px;
-                overflow: hidden;
+                height: 160px;
             }
 
             .header-card {
@@ -412,37 +436,12 @@
                 left: auto;
                 right: auto;
                 z-index: 10;
-                margin: -45px 20px 0;
+                margin: -70px 40px 0;
                 background: white !important;
                 backdrop-filter: none;
                 -webkit-backdrop-filter: none;
                 border: 1px solid #ddd;
-                border-radius: 14px;
-                box-shadow: none;
-                padding: 12px 20px;
-                gap: 20px;
-            }
-
-            .profile-photo {
-                width: 92px;
-                height: 92px;
-                border-width: 3px;
-                transform: none;
-            }
-
-            h1 {
-                font-size: 1.9rem;
-            }
-
-            .tagline {
-                font-size: 0.85rem;
-                margin-top: 6px;
-                line-height: 1.35;
-            }
-
-            .web-link {
-                font-size: 0.68rem;
-                margin-top: 5px;
+                padding: 15px 25px;
             }
 
             .content-layout {
@@ -476,9 +475,9 @@
 
             .btn-link {
                 display: inline-block;
-                padding: 3px 8px;
-                margin: 0 3px 5px 0;
-                font-size: 0.66rem;
+                padding: 2px 6px;
+                margin: 0 2px 4px 0;
+                font-size: 0.62rem;
                 border-radius: 6px;
             }
 
@@ -487,7 +486,11 @@
             }
 
             .skill-box {
-                margin-bottom: 8px;
+                margin-bottom: 6px;
+            }
+
+            .sidebar {
+                line-height: 1.35;
             }
 
             .skill-box h4 {
@@ -510,6 +513,21 @@
                 border-radius: 8px;
             }
 
+            .sidebar .edu-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 6px;
+            }
+
+            .sidebar .edu-card {
+                padding: 4px 8px;
+            }
+
+            .sidebar .edu-card span {
+                font-size: 0.6rem;
+                line-height: 1.2;
+                display: block;
+            }
+
             .edu-card b {
                 font-size: 0.74rem;
             }
@@ -528,9 +546,20 @@
                 margin-bottom: 0;
             }
 
-            .main-col > section:first-child p {
-                font-size: 0.8rem;
-                line-height: 1.5;
+            .summary p,
+            .summary li {
+                font-size: 0.74rem;
+                line-height: 1.38;
+                margin-bottom: 4px;
+            }
+
+            .summary ul {
+                margin-bottom: 6px;
+            }
+
+            .summary h3 {
+                font-size: 0.74rem;
+                margin: 7px 0 3px;
             }
 
             /* Experiência em diante: página nova, largura total */
@@ -589,7 +618,8 @@
             }
 
             .control-bar,
-            .whatsapp-float {
+            .whatsapp-float,
+            .print-hide {
                 display: none !important;
             }
         }
@@ -820,26 +850,46 @@
 
                 <section>
                     <h2 class="section-title">Resumo Profissional</h2>
-                    <p style="text-align: justify; font-size: 0.95rem; color: #334155; margin-top: 0;">
-                        Com mais de <b>25 anos na linha de frente da tecnologia</b>, atuo na convergência entre visão
-                        executiva (ex-CEO) e engenharia de software de missão crítica. Como <b>AI-Native Product
-                            Engineer</b>, transformo dores reais de negócio em produtos que escalam, operam sem fricção e
-                        geram ROI comprovado.
-                    </p>
-                    <p style="text-align: justify; font-size: 0.95rem; color: #334155;">
-                        Engenharia AI-Native com rigor: <b>Spec-Driven Development</b> (especificação, contratos de API
-                        e arquitetura como fonte única da verdade antes de qualquer código gerado), <b>quality gates
-                            determinísticos</b> (lint, análise estática, testes de regressão e revisão humana) e
-                        <b>orquestração de agentes com MCP</b>, delimitando contexto para entregar rápido sem
-                        alucinações.
-                    </p>
-                    <p style="text-align: justify; font-size: 0.95rem; color: #334155; margin-bottom: 0;">
-                        Stack: arquiteturas Offline-First (Flutter + PowerSync/SQLite) e SaaS (Supabase, Next.js),
-                        <b>OutSystems (Certificado ODC/O11)</b> para operações corporativas, automação e dados com
-                        Python, n8n e scrapers resilientes, e infraestrutura self-hosted com Docker e monitorização
-                        proativa (Zabbix). Pela <b>VittaSync</b>, adoto tecnologia pelo impacto no negócio, não pelo
-                        hype: até 30% menos churn técnico e ciclos de entrega até 10x mais rápidos com governança.
-                    </p>
+                    <div class="summary">
+                        <p>Com mais de <b>25 anos na linha de frente da tecnologia</b>, atuo na convergência entre visão
+                            executiva (ex-CEO) e engenharia de software de missão crítica. Meu foco como <b>AI-Native
+                                Product Engineer &amp; Solutions Architect</b> é transformar dores reais de negócio em
+                            arquiteturas digitais que escalam, operam sem fricção e geram ROI comprovado.</p>
+
+                        <h3>Engenharia AI-Native com Rigor</h3>
+                        <p>O mercado saturou-se de protótipos frágeis gerados por tentativas no chat. Minha abordagem
+                            inverte essa lógica:</p>
+                        <ul>
+                            <li><b>Spec-Driven Development (SDD)</b>: A especificação técnica, contratos de API e
+                                arquitetura do sistema são a fonte única da verdade antes de qualquer geração de código.</li>
+                            <li><b>Quality Gates Determinísticos</b>: Todo fluxo assistido por agentes passa por validações
+                                rígidas automatizadas (análise estática, testes de regressão, lint e revisão humana de
+                                arquitetura).</li>
+                            <li><b>Orquestração de Agentes &amp; MCP</b>: Integração de agentes de desenvolvimento com Model
+                                Context Protocol (MCP), delimitando contexto para entrega rápida sem alucinações.</li>
+                        </ul>
+
+                        <h3>Arquitetura, Produto &amp; Stack</h3>
+                        <p>Domino ecossistemas de alta disponibilidade, conectando o Low-Code ao High-Code moderno:</p>
+                        <ul>
+                            <li><b>Engenharia de Produto &amp; Mobile</b>: Arquiteturas Offline-First (Flutter + PowerSync /
+                                SQLite) e SaaS modernos (Supabase, Next.js/TypeScript).</li>
+                            <li><b>Enterprise &amp; Low-Code</b>: Sólida experiência em OutSystems (Reactive/Mobile/APIs) para
+                                operações corporativas que exigem velocidade e governança.</li>
+                            <li><b>Automação &amp; Dados</b>: Python, n8n, microsserviços orientados a eventos e scrapers
+                                resilientes (OSINT).</li>
+                            <li><b>Infraestrutura Soberana</b>: SRE, Docker, ambientes self-hosted e monitoramento proativo
+                                (Zabbix).</li>
+                        </ul>
+
+                        <h3>Mentalidade de Dono (ROI &amp; Execução)</h3>
+                        <p>Através da <b>VittaSync</b>, atuo como consultor e desenvolvedor estratégico. Não adoto
+                            tecnologia pelo hype, mas pelo impacto na última linha do balanço (redução de até 30% em churn
+                            técnico, aceleração de até 10x no ciclo de entrega com governança).</p>
+                        <p class="print-hide">Se você precisa de uma liderança técnica com casca grossa para construir produtos resilientes ou
+                            modernizar seu ciclo de desenvolvimento com agentes de IA sem abrir mão da engenharia séria,
+                            vamos conversar.</p>
+                    </div>
                 </section>
 
                 <section>
@@ -955,7 +1005,7 @@
                                 <span class="comp-name">PHNet</span>
                                 <span class="exp-date">Jan 2023 — Jul 2023</span>
                             </div>
-                            <b class="role-name">OutSystems Developer Senior & Network Automation</b>
+                            <b class="role-name">OutSystems Developer & Network Automation</b>
                             <ul class="exp-list">
                                 <li><b>Fullstack Network Orchestration</b>: Desenvolvimento de arquitetura E2E para
                                     gestão de infraestrutura ISP, integrando OutSystems com Radius e MikroTik para
@@ -978,18 +1028,12 @@
                             </div>
                             <b class="role-name">CEO & Arquiteto de Soluções (Strategic Product Engineering)</b>
                             <ul class="exp-list">
-                                <li><b>Strategic Evolution (11+ Anos)</b>: Trajetória completa de liderança, evoluindo
-                                    de técnico de implantação e formação de equipas para a arquitetura total de sistemas
-                                    e gestão executiva da empresa.</li>
+                                <li><b>Strategic Evolution (11+ Anos)</b>: De técnico de implantação a CEO, responsável
+                                    pela arquitetura de sistemas e pela gestão executiva da empresa.</li>
                                 <li><b>Fullstack Ecosystem Management</b>: Liderança técnica hands-on (C# / JS /
-                                    OutSystems), garantindo a estabilidade e operação crítica de mais de 300 clientes
-                                    enterprise.</li>
-                                <li><b>Continuous Legacy Optimization</b>: Atuação contínua (atualmente via VittaSync)
-                                    na modernização de todo o parque tecnológico construído, injetando automação DevOps
-                                    e inteligência AI-Native para maximizar a resiliência e o ROI.</li>
-                                <li><b>Business & Tech Bridge</b>: Tradução de necessidades complexas de negócio em
-                                    soluções de software escaláveis, mantendo um suporte nível 3 de alta disponibilidade
-                                    por mais de uma década.</li>
+                                    OutSystems) na operação crítica de mais de 300 clientes enterprise.</li>
+                                <li><b>Business & Tech Bridge</b>: Tradução de necessidades de negócio em software
+                                    escalável, com suporte nível 3 por mais de uma década.</li>
                             </ul>
                         </div>
 
