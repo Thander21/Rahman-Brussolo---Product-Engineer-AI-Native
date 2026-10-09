@@ -40,6 +40,12 @@ Expert em **OutSystems (Certificado ODC/O11)** ancorado por **25 anos de trajet�
 
 ## 💼 Experiência Profissional
 
+### **SPMS, EPE | Serviços Partilhados do Ministério da Saúde**
+*Analista Funcional | 2026 — Presente*
+*   **Documentação Funcional**: Análise funcional de aplicações e portais digitais do SNS, traduzindo necessidades de negócio em requisitos claros e executáveis.
+*   **Fluxos de Negócio**: Modelação em BPMN 2.0 e UML dos fluxos de utilizador de utentes e profissionais de saúde, com documentação das regras de negócio.
+*   **Segurança & Qualidade**: Análise e melhoria do checklist de controlo de segurança e qualidade dos produtos SPMS, em articulação com as equipas de RGPD, Cibersegurança e Desenvolvimento.
+
 ### **VittaSync | Projetos R&D**
 *Founder & Product Engineer AI-Native | 2025 — Presente*
 *   **Agentic Orchestration**: Desenvolvimento de motores de orquestração via Antigravity e MCP para automação radical de infraestrutura.
@@ -47,7 +53,7 @@ Expert em **OutSystems (Certificado ODC/O11)** ancorado por **25 anos de trajet�
 *   **Modern ERP Sync**: Arquitetura do ERP PDV D+, garantindo resiliência Offline-First e sincronia de dados em tempo real.
 
 ### **NOS (Portugal)**
-*Especialista de Monitorização e Observabilidade de Infraestrutura | 2025 — Presente*
+*Especialista de Monitorização e Observabilidade de Infraestrutura | 2025 — 2026*
 *   **High Availability Ops**: Arquitetura de observabilidade em larga escala (Stack Zabbix/Grafana/ELK), garantindo continuidade em serviços críticos de telecomunicações.
 *   **Incident Engineering**: Liderança técnica na resolução de incidentes complexos, focando na automação de alertas e redução do MTTR via cultura SRE.
 
