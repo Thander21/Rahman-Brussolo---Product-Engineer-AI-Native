@@ -42,11 +42,11 @@ Expert em **OutSystems (Certificado ODC/O11)** ancorado por **25 anos de trajet�
 
 ### **SPMS, EPE | Serviços Partilhados do Ministério da Saúde**
 *Analista Funcional | 2026 — Presente*
-*   **Documentação Funcional**: Análise funcional de aplicações e portais digitais do SNS, traduzindo necessidades de negócio em requisitos claros e executáveis.
-*   **Fluxos de Negócio**: Modelação em BPMN 2.0 e UML dos fluxos de utilizador de utentes e profissionais de saúde, com documentação das regras de negócio.
-*   **Segurança & Qualidade**: Análise e melhoria do checklist de controlo de segurança e qualidade dos produtos SPMS, em articulação com as equipas de RGPD, Cibersegurança e Desenvolvimento.
+*   **Functional Analysis**: Análise funcional de aplicações e portais digitais do SNS, traduzindo necessidades de negócio em requisitos claros e executáveis.
+*   **Business Process Modeling**: Modelação em BPMN 2.0 e UML dos fluxos de utilizador de utentes e profissionais de saúde, com documentação das regras de negócio.
+*   **Security & Quality Compliance**: Análise e melhoria do checklist de controlo de segurança e qualidade dos produtos SPMS, em articulação com as equipas de RGPD, Cibersegurança e Desenvolvimento.
 
-### **VittaSync | Projetos R&D**
+### **VittaSync | Projetos de Desenvolvimento Brasil/Portugal**
 *Founder & Product Engineer AI-Native | 2025 — Presente*
 *   **Agentic Orchestration**: Desenvolvimento de motores de orquestração via Antigravity e MCP para automação radical de infraestrutura.
 *   **Hybrid Infra & DevOps**: Gestão de infraestrutura própria (Linux/Windows) com foco em **Soberania de Dados**, operando Docker/Coolify e IIS com automação de CI/CD via GitHub Actions, Vercel e Cloudflare Pages.
